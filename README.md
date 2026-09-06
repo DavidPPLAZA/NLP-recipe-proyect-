@@ -54,45 +54,6 @@ El notebook (`proyecto_nlp.ipynb`) documenta el proceso completo de experimentac
 | Síntesis de voz | Kokoro-ONNX |
 | Retrieval léxico (comparativa) | BM25 |
 
-## 📁 Estructura del repositorio
-
-```
-📁 recetario-inteligente/
-├── README.md
-├── requirements.txt
-├── app.py                      # Aplicación Streamlit
-├── proyecto_nlp.ipynb          # Notebook de investigación y experimentación
-├── recetas.csv                 # Dataset base de recetas
-├── audio_query.wav             # Ejemplo: consulta hablada
-└── respuesta_recetas.wav       # Ejemplo: respuesta generada por el sistema
-```
-
-> **Nota:** los modelos pesados (`kokoro-v1.0.onnx`, `voices.bin`) y la base vectorial indexada (`chroma_e5/`) no se incluyen en el repositorio por tamaño — se generan/descargan en el paso de instalación (ver más abajo).
-
-## 🚀 Cómo ejecutarlo
-
-```bash
-# Clona el repositorio
-git clone https://github.com/DavidPPLAZA/<nombre-repo>.git
-cd <nombre-repo>
-
-# Instala las dependencias
-pip install -r requirements.txt
-
-# Instala y arranca Ollama (para la normalización de queries)
-# https://ollama.com/download
-ollama pull qwen2.5:3b
-
-# Descarga los archivos del modelo de voz Kokoro y colócalos en la raíz del proyecto:
-# - kokoro-v1.0.onnx
-# - voices.bin
-# https://github.com/thewh1teagle/kokoro-onnx
-
-# Ejecuta la app
-streamlit run app.py
-```
-
-La primera ejecución generará la colección `chroma_e5/` indexando `recetas.csv` con los embeddings de E5 — puede tardar unos minutos.
 
 ## 💡 Aprendizajes clave
 
