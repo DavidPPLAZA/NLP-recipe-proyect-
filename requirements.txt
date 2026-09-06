@@ -1,0 +1,13 @@
+streamlit
+numpy
+torch
+sentence-transformers
+chromadb
+openai-whisper
+kokoro-onnx
+openai
+audio-recorder-streamlit
+
+# Además, necesario en local (no vía pip):
+# - Ollama (https://ollama.com/download), con el modelo: ollama pull qwen2.5:3b
+# - ffmpeg (requerido por Whisper para procesar audio)
