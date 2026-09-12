@@ -62,6 +62,3 @@ El notebook (`proyecto_nlp.ipynb`) documenta el proceso completo de experimentac
 - Un LLM pequeño en local es suficiente para tareas de normalización de texto (corrección ortográfica, interpretación de consultas abstractas), sin necesidad de un modelo grande ni de APIs externas.
 - Generar la respuesta hablada con un LLM (en vez de leer literalmente los resultados) hace que la interacción por voz se sienta natural en lugar de mecánica.
 
-## 📄 Licencia
-
-Proyecto con fines educativos. El dataset de recetas se usa con fines de investigación académica.
